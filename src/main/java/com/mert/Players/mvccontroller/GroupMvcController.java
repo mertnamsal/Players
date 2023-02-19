@@ -2,7 +2,6 @@ package com.mert.Players.mvccontroller;
 
 import com.mert.Players.mvccontroller.models.GroupIndexModel;
 import com.mert.Players.mvccontroller.models.PlayerIndexModel;
-import com.mert.Players.repository.entity.Group;
 import com.mert.Players.repository.entity.Player;
 import com.mert.Players.service.GroupService;
 import com.mert.Players.service.PlayerService;
@@ -13,7 +12,6 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
-import java.util.List;
 import java.util.Optional;
 
 import static com.mert.Players.constant.EndPoints.*;

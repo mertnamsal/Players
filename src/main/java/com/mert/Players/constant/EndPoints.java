@@ -15,6 +15,8 @@ public class EndPoints {
     public static final String SAVEALL = "/saveall";
     public static final String MVCPLAYER = MVC+"/player";
     public static final String MVCGROUP = MVC+"/group";
+    public static final String REGISTER = "/register";
+
 
 
 }

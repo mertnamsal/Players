@@ -1,5 +1,6 @@
 package com.mert.Players.dto.request;
 
+import com.mert.Players.repository.entity.Group;
 import lombok.*;
 
 
@@ -8,9 +9,10 @@ import lombok.*;
 @NoArgsConstructor
 @AllArgsConstructor
 @ToString
-public class PlayerRequestDto {
-    private Long id;
+public class PlayerSaveRequestDto {
     private String name;
     private String surname;
+    private String age;
     private String jerseyno;
+    private Group group;
 }
