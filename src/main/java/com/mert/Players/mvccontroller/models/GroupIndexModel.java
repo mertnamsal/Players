@@ -12,7 +12,10 @@ import java.util.List;
 @ToString
 public class GroupIndexModel {
 
-    String name;
-    String location;
-    List<Player> playerList;
+    String name0;
+    String name1;
+    String name2;
+    List<Player> playerList0;
+    List<Player> playerList1;
+    List<Player> playerList2;
 }

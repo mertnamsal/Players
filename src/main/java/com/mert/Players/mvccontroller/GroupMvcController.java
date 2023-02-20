@@ -17,7 +17,7 @@ import java.util.Optional;
 import static com.mert.Players.constant.EndPoints.*;
 
 @Controller
-@RequestMapping(MVCPLAYER)
+@RequestMapping(MVCGROUP)
 @RequiredArgsConstructor
 public class GroupMvcController {
     private final GroupService groupService;
@@ -27,18 +27,15 @@ public class GroupMvcController {
     public ModelAndView index(){
         ModelAndView modelAndView = new ModelAndView();
         modelAndView.setViewName("index");
-        PlayerIndexModel model = new PlayerIndexModel();
-        GroupIndexModel model1 = new GroupIndexModel();
-        GroupIndexModel model2 = new GroupIndexModel();
-        model.setPlayerList(groupService.findById(0L).get().getPlayers());
-        model1.setPlayerList(groupService.findById(1L).get().getPlayers());
-        model2.setPlayerList(groupService.findById(2L).get().getPlayers());
-
-        model1.setName(groupService.findById(1L).get().getName());
-        model2.setName(groupService.findById(2L).get().getName());
+        GroupIndexModel model = new GroupIndexModel();
+        model.setName0(groupService.findById(0L).get().getName());
+        model.setName0(groupService.findById(1L).get().getName());
+        model.setName0(groupService.findById(2L).get().getName());
+        model.setPlayerList0(groupService.findById(0L).get().getPlayers());
+        model.setPlayerList1(groupService.findById(1L).get().getPlayers());
+        model.setPlayerList2(groupService.findById(2L).get().getPlayers());
         modelAndView.addObject("model",model);
-        modelAndView.addObject("model1",model1);
-        modelAndView.addObject("model2",model2);
+
 
         return modelAndView;
     }

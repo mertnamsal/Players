@@ -11,7 +11,6 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
-import java.util.Optional;
 
 import static com.mert.Players.constant.EndPoints.*;
 
@@ -43,7 +42,6 @@ public class PlayerMvcController {
             return new ModelAndView("redirect:register");
         }
         return model;
-
-
     }
+
 }
